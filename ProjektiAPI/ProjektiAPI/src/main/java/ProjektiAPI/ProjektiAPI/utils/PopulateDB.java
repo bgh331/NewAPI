@@ -15,7 +15,10 @@ public class PopulateDB {
 	public void populate() {
 		repository.deleteAll();
 		
-		repository.save(new Kysely("Minkä kokoinen on Islanti?", "a) Iso", "b) Keskikokoinen", "c) Pieni"));
+		repository.save(new Kysely("Ajan ja tehtävirn hallinta", "Teen tehtäväni sitä mukaan kun ne ilmestyy.", "Teen töistä aikataulun, jota pyrin noudattamaan.", 
+				"Suunnittelen ja priorisoin säännölliset työtehtävät keskittyen olennaiseen."));
+		repository.save(new Kysely("Stressinhallinta", "Tiedän kuinka stressiä voisi hallita, mutta tunnen itseni usein stressaantuneeksi.", "Saan usein hallittua omat stressitasoni.", 
+				"Stressinhallintani voisi olla parempi työympäristössä."));
 		
 	}
 }
